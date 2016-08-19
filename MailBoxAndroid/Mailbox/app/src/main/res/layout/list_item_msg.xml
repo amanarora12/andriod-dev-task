@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="14dp"
+    android:background="@color/colorTextWhite"
+    android:animateLayoutChanges="true">
+    <ImageView
+        android:id="@+id/img_partcipant"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txt_user_initials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_partcipant"
+        android:layout_alignLeft="@+id/img_partcipant"
+        android:layout_alignRight="@+id/img_partcipant"
+        android:layout_alignTop="@+id/img_partcipant"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextWhite" />
+
+    <TextView
+        android:id="@+id/txt_unread_msgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_msg"
+        android:background="@drawable/bg_circle"
+        android:gravity="center"
+        android:textSize="8sp"
+        android:textColor="@color/colorTextWhite"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/img_partcipant"
+        />
+    <TextView
+        android:id="@+id/txt_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_alignBaseline="@id/txt_unread_msgs"
+        android:layout_toRightOf="@+id/txt_unread_msgs"
+        android:singleLine="false"
+        tools:text="Disha Patani"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal" />
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/txt_participants"
+        android:textSize="12sp"
+        android:singleLine="true"
+        tools:text="07:34 AM"
+        android:textColor="@color/colorTextNormal" />
+    <TextView
+        android:id="@+id/txt_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_participants"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        tools:text="Blah! blah blah blah blah blah"
+        android:layout_toRightOf="@+id/img_partcipant"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorTextPrimary" />
+    <TextView
+        android:id="@+id/txt_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_subject"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        tools:text="Blah! blah blah blah blah blah"
+        android:layout_toRightOf="@+id/img_partcipant"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorTextNormal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/txt_preview"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorBackgound"/>
+</RelativeLayout>

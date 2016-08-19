@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mailbox</string>
+    <string name="new_msg">New</string>
+
+    <string-array name="image_bg_colors">
+        <item>#7FCBD9</item>
+        <item>#70B2D8</item>
+        <item>#7BCB81</item>
+        <item>#E48283</item>
+        <item>#EEA781</item>
+        <item>#EF83AC</item>
+        <item>#E6C26C</item>
+    </string-array>
+</resources>
